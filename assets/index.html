@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <script>
+    module.exports = {
+      theme: {
+        screens: {
+          sm: '480px',
+          md: '768px',
+          lg: '976px',
+          xl: '1440px',
+        },
+        colors: {
+          red: 'red',
+          blue: '#1fb6ff',
+          purple: '#7e5bef',
+          pink: '#ff49db',
+          orange: '#ff7849',
+          green: '#13ce66',
+          yellow: '#ffc82c',
+          'gray-dark': '#273444',
+          gray: '#8492a6',
+          'gray-light': '#d3dce6',
+        },
+        widh: {
+          box: '364px',
+        },
+        fontFamily: {
+          sans: ['Graphik', 'sans-serif'],
+          serif: ['Merriweather', 'serif'],
+        },
+
+        extend: {
+          spacing: {
+            '128': '32rem',
+            '144': '36rem',
+          },
+          maxWidth: {
+            conta: '364px',
+          },
+          borderRadius: {
+            '4xl': '2rem',
+          },
+        },
+      },
+    }
+  </script>
+  <body>
+    <header class="bg-zinc-500">
+      <div class="max-w-6xl mx-auto">
+        <nav class="py-6 flex justify-between">
+          <div class="p-">
+            <img src="../assets/icon/logo.svg" alt="#" />
+          </div>
+          <ul class="flex gap-10">
+            <li class=" ">
+              <a class="text-white" href="#">Home</a>
+            </li>
+            <li>
+              <a class="text-white" href="#">About</a>
+            </li>
+            <li>
+              <a class="text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="bg-gray-200">
+        <div class="max-w-6xl mx-auto pt-14 flex justify-between">
+          <div class="mt-24">
+            <h1 class="text-4xl mb-3 text-gray-700">
+              Double click text to change it
+            </h1>
+            <p class="max-w-lg mb-8 text-lg">
+              To style this paragraph , select this paragraph, then edit its
+              styles in the Style tabon the right side of the Designer.
+            </p>
+            <p class="py-4 px-6 bg-white inline-block mb-36 text-sm">
+              Edit this link in the set tings tab in the right panel
+            </p>
+          </div>
+          <div>
+            <img class="mx-auto" src="./img/intro.png" alt="#" />
+            <p class="max-w-xs text-center text-xs text-gray-500 mb-16">
+              In the navigator tab located in the right panel you can see all
+              your elements in one place.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- </section> -->
+      <section class="bg-gray-400">
+        <div class="max-w-6xl mx-auto">
+          <ul class="flex py-14 justify-between">
+            <li>
+              <a href="#">
+                <img src="./icon/f.svg" alt="#" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./icon/s.svg" alt="#" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./icon/a.svg" alt="#" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./icon/fit.svg" alt="#" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./icon/d.svg" alt="#" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./icon/sega.svg" alt="#" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./icon/predment.svg" alt="#" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./icon/google.svg" alt="#" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- </section> -->
+      <section>
+        <div class="max-w-6xl mx-auto grid grid-cols-2 mt-12 justify-between">
+          <div>
+            <h2 class="text-3xl text-black mb-4">
+              What is a Class?
+            </h2>
+            <p class="max-w-lg text-base text-black">
+              A Class is more than just the name of an element, it is a title
+              you create that can be added to other elements that you'd like to
+              be styled the same way. Notice that if you select this paragraph,
+              and change it, it will effect the paragraph below as well, since
+              they have the same Class.
+            </p>
+          </div>
+          <div>
+            <img class="mx-auto m-0" src="./img/img1.png" alt="#" />
+            <p class="text-center text-xs text-gray-500 -mt-8">
+              Double click an image to replace it.
+            </p>
+          </div>
+          <div>
+            <img src="./img/img2.png" alt="#" />
+            <p class="text-xs text-gray-500 -mt-8 ml-4">
+              You can also double click an image to change its size.
+            </p>
+          </div>
+          <div class="mt-20">
+            <h2 class="text-3xl text-black mb-4">
+              Parents, and text alignment
+            </h2>
+            <p class="max-w-lg text-base text-black mb-28">
+              By now you may have noticed that web design, simply put, is a
+              series of boxes inside of boxes with text and images inside of
+              them. Try selecting the parent element of this text
+              <span class="bg-blue-700 rounded px-1">Right 2</span>
+              then changing the text alignment.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- </section> -->
+      <section class="bg-gray-300">
+        <div class="max-w-6xl mx-auto">
+          <div class="">
+            <h2 class="text-3xl text-black pt-20 text-center mb-3">
+              Layout tip
+            </h2>
+            <p class="text-center mb-10">
+              Change the layout direction of a flexboxelement from horizontal to
+              vertical.
+            </p>
+            <img class="mx-auto" src="./img/img3.png" alt="#" />
+            <p class="text-center -mt-12 pb-12">
+              Flexbox is a display setting found in the styles tab under
+              <br />
+              Layout Display Settings
+            </p>
+          </div>
+          <div class="flex gap-7">
+            <div
+              class="py-8 px-16 bg-white rounded-md hover:shadow-gray-600n mb-20"
+            >
+              <p class="text-center text-lg mb-8">
+                Step 1
+              </p>
+              <img class="mx-auto mb-10" src="./icon/svg1.svg" alt="#" />
+              <p class="w-64 max-w-full text-center">
+                Click to select
+                <span class="px-1 bg-blue-700 rounded text-white">
+                  Column 1
+                </span>
+                which is the white box that this paragraph you're reading is
+                currently inside of.
+              </p>
+            </div>
+            <div
+              class="py-8 px-16 bg-white rounded-md hover:shadow-gray-600n mb-20"
+            >
+              <p class="text-center text-lg mb-8">
+                Step 3
+              </p>
+              <img class="mx-auto mb-10" src="./icon/svg3.svg" alt="#" />
+              <p class="w-64 max-w-full text-center">
+                With
+                <span class="px-1 bg-blue-700 rounded text-white">
+                  Column Wrap
+                </span>
+                1 selected, click the icon shown above in the Layout Flex Layout
+                styles panel.
+              </p>
+            </div>
+            <div
+              class="py-8 px-16 bg-white rounded-md hover:shadow-gray-600n mb-20"
+            >
+              <p class="text-center text-lg mb-8">
+                Step 2
+              </p>
+              <img class="mx-auto mb-10" src="./icon/svg2.svg" alt="#" />
+              <p class="w-64 max-w-full text-center">
+                Now that
+                <span class="px-1 bg-blue-700 rounded text-white">
+                  Column 1
+                </span>
+                is selected, press the up arrow on your keyboard, selecting the
+                parent element: Column Wrap 1
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- </section> -->
+      <section class="bg-white">
+        <div class="max-w-6xl mx-auto mb-20">
+          <h2 class="pt-24 mb-20 text-3xl">
+            Additional tips
+          </h2>
+          <div class="flex justify-between -mt-16">
+            <div>
+              <img class="mb-7 relative -left-8" src="./img/img4.png" alt="#" />
+              <h5 class="text-lg mb-3 -mt-16">
+                Margin / Padding
+              </h5>
+              <p class="w-60 max-w-full text-gray-500 text-sm">
+                The above screenshot shows the controls for margin and padding.
+                Simply put, this is the space you add inside and/or outside of
+                an element.
+              </p>
+            </div>
+            <!--  -->
+            <div>
+              <img class="mb-7 relative -left-8" src="./img/img5.png" alt="#" />
+              <h5 class="text-lg mb-3 -mt-16">
+                Add Elements
+              </h5>
+              <p class="w-60 max-w-full text-gray-500 text-sm">
+                The navigator tab gives you a clear breakdown of elements and
+                their parents, as well as where they are located within the
+                page.
+              </p>
+            </div>
+            <!--  -->
+            <div>
+              <img class="mb-7 relative -left-8" src="./img/img6.png" alt="#" />
+              <h5 class="text-lg mb-3 -mt-16">
+                Responsive design
+              </h5>
+              <p class="w-60 max-w-full text-gray-500 text-sm">
+                Clicking these breakpoints icons will change the size of the
+                viewport to mimic common device sizes. Styles that are changed
+                when viewing the website at other breakpoints will effect sizes
+                smaller as well.
+              </p>
+            </div>
+            <!--  -->
+            <div>
+              <img class="mb-7 relative -left-8" src="./img/img7.png" alt="#" />
+              <h5 class="text-lg mb-3 -mt-16">
+                States
+              </h5>
+              <p class="w-60 max-w-full text-gray-500 text-sm">
+                On the top right of the selector section, there is a states
+                dropdown. Here you can edit element styles at different states.
+                The most common use for this is adding hover effects to elements
+                such as buttons.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- </main> -->
+    <footer class="bg-zinc-500">
+      <div class="max-w-6xl mx-auto">
+        <nav class="py-10 flex justify-between">
+          <div class="p-">
+            <img src="../assets/icon/logo.svg" alt="#" />
+          </div>
+          <ul class="flex gap-10">
+            <li class=" ">
+              <a class="text-white" href="#">Home</a>
+            </li>
+            <li>
+              <a class="text-white" href="#">About</a>
+            </li>
+            <li>
+              <a class="text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <section class="bg-black">
+<div class="max-w-6xl mx-auto py-4">
+  <a class="text-slate-500" href="#">© 2017, Webflow, Inc. All Rights Reserved. Brand logos for demonstration purposes only.</a>
+</div>
+    </section>
+  </body>
+</html>
